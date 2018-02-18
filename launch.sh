@@ -9,4 +9,6 @@ if [ -z CONNECT_PORT ]; then
     sed -i -e "s/5001/${CONNECT_PORT}/" /etc/stunnel/config/config
 fi
 
+cat /etc/stunnel/config/config
+
 stunnel /etc/stunnel/config/config
